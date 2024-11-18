@@ -1,0 +1,250 @@
+{% extends 'base.html' %}
+
+{% block title %} Ecomaritime | Home {% endblock title %}
+
+{% block content %}
+
+<section class="hero-wrap" style="background-image: url('/static/images/john-simmons-UYXBqnIBtuI-unsplash.jpg');"
+	data-stellar-background-ratio="0.3">
+	<div class="overlay"></div>
+	<div class="container">
+		<div class="row no-gutters slider-text align-items-center">
+			<div class="col-md-10 col-lg-7 ftco-animate d-flex align-items-end">
+				<div class="text" style="color: white;">
+					<h1 class="mb-4" style="color: white;">Ecomaritime <span style="color: white;">Logistics BV</span>
+					</h1>
+					<p style="font-size: 18px; color: white;">Ecomaritime Logistics BV, with more than 10 years of
+						experience, we specialize in providing efficient shipping and storage solutions. Our dedicated
+						team ensures that your products are handled with utmost care. We strive to make the shipping
+						process seamless and hassle-free for our clients. </p>
+
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section class="ftco-section ftco-no-pb ftco-no-pt bg-primary">
+	<div class="container">
+		<div class="row d-flex no-gutters">
+			<div class="col-md-3 d-flex align-items-stretch ftco-animate">
+				<div class="media block-6 services services-bg d-block text-center px-4 py-5">
+					<div class="icon d-flex justify-content-center align-items-center"><span
+							class="flaticon-system"></span></div>
+					<div class="media-body py-md-4">
+						<h3>Reliable Delivery</h3>
+						<p>We ensure your shipments are delivered on time, every time. Trust us for all your shipping
+							needs.</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-3 d-flex align-items-stretch ftco-animate">
+				<div class="media block-6 services services-bg services-darken d-block text-center px-4 py-5">
+					<div class="icon d-flex justify-content-center align-items-center"><span
+							class="flaticon-supervised"></span></div>
+					<div class="media-body py-md-4">
+						<h3>Convenient Service</h3>
+						<p>Our user-friendly platform makes it easy for you to schedule and manage your shipments. </p>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-3 d-flex align-items-stretch ftco-animate">
+				<div class="media block-6 services services-bg services-lighten d-block text-center px-4 py-5">
+					<div class="icon d-flex justify-content-center align-items-center"><span
+							class="flaticon-accounting"></span></div>
+					<div class="media-body py-md-4">
+						<h3>Customer Support</h3>
+						<p>Our dedicated support team is available 24/7 to assist you with any queries or issues. </p>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-3 d-flex align-items-stretch ftco-animate">
+				<div class="media block-6 services services-bg d-block text-center px-4 py-5">
+					<div class="icon d-flex justify-content-center align-items-center"><span
+							class="flaticon-blueprint"></span></div>
+					<div class="media-body py-md-4">
+						<h3>Secure Transactions</h3>
+						<p>We prioritize your security. All transactions are documented and stored to ensure your
+							information is kept confidential.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+
+<section class="ftco-section ftco-no-pb ftco-no-pt">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-7 order-md-last d-md-flex align-items-stretch">
+				<div class="img w-100 img-2 mr-md-2"
+					style="background-image: url(/static/images/timur-garifov-59MPk7WXuWM-unsplash.jpg);"></div>
+				<div class="img w-100 img-2 img-overlay ml-md-2 p-4"
+					style="background-image: url(/static/images/about-2.jpg);">
+					<div class="request-quote py-5">
+						<div class="py-2">
+							<span class="subheading">Be Part of our Business</span>
+							<h3>Request A Quote</h3>
+						</div>
+						<form action="/sendquote" method="POST" class="request-form ftco-animate">
+							<div class="form-group">
+								<input name="fname" type="text" class="form-control" placeholder="First Name" required>
+							</div>
+							<div class="form-group">
+								<input name="lname" type="text" class="form-control" placeholder="Last Name" required>
+							</div>
+							<div class="form-group">
+								<div class="form-field">
+									<div class="select-wrap">
+										<div class="icon-arr"><span class="ion-ios-arrow-down"></span></div>
+										<select name="option" id="" class="form-control" required>
+											<option value="">Select Your Services</option>
+											<option value="Tank Storages">Tank Storages</option>
+											<option value="Rail Transport">Rail Transport</option>
+											<option value="Pipeline Transport">Pipeline Transport</option>
+											<option value="Other">Other</option>
+										</select>
+									</div>
+								</div>
+							</div>
+							<div class="form-group">
+								<input name="phone" type="text" class="form-control" placeholder="Phone" required>
+							</div>
+							<div class="form-group">
+								<textarea name="message" id="" cols="30" rows="2" class="form-control"
+									placeholder="Message" required></textarea>
+							</div>
+							<div class="form-group">
+								<input type="submit" value="Request A Quote" class="btn btn-primary py-3 px-4">
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-5 wrap-about py-md-5 ftco-animate">
+				<div class="heading-section pr-md-5">
+					<h2 class="mb-4">Ecomaritime.</h2>
+					<p>At Ecomaritime, we pride ourselves on our commitment to excellence in shipping and logistics
+						services. With over 10 years of experience, we have established ourselves as a trusted partner
+						for businesses of all sizes.</p>
+
+					<p>Our team of dedicated professionals is passionate about delivering reliable and efficient
+						shipping solutions. We understand the importance of timely delivery and strive to ensure that
+						your shipments reach their destination on time, every time.</p>
+
+					<p>When you choose Ecomaritime, you can expect a convenient and user-friendly experience. Our
+						platform is designed to make it easy for you to schedule and manage your shipments. Whether you
+						need to transport goods by land, sea, or air, we have the expertise and resources to handle it.
+					</p>
+					<p>
+					<ul>
+						<li>Customized shipping solutions to meet your specific needs</li>
+						<li>Secure handling and delivery of your shipments</li>
+						<li>Exceptional customer service ready to assist you</li>
+					</ul>
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+
+
+<section class="ftco-section ftco-portfolio">
+	<div class="row justify-content-center no-gutters">
+		<div class="col-md-12 heading-section text-center ftco-animate mb-5">
+			<h2 class="mb-2">services</h2>
+		</div>
+	</div>
+
+	<div class="container">
+		<div class="row no-gutters">
+			<div class="col-md-12 portfolio-wrap">
+				<div class="row no-gutters align-items-center">
+					<div class="col-md-5 img js-fullheight"
+						style="background-image: url(/static/images/luke-hartley-Ywq5AuM4a0Q-unsplash.jpg);">
+
+					</div>
+					<div class="col-md-7">
+						<div class="text pt-5 pl-0 pl-lg-5 pl-md-4 ftco-animate">
+							<div class="px-4 px-lg-4">
+								<div class="desc">
+									<div class="top">
+										<h2 class="mb-4"><a href="/railway">Rail Transport</a></h2>
+									</div>
+									<div class="absolute">
+										<p>At Ecomaritime Logistics, we offer rail transport solutions that are designed to meet the unique needs of our clients. Our rail transport services are reliable, efficient and safe. We understand the importance of timely delivery and the need for a transport solution that can handle large volumes of products. </p>
+										<p>
+											Our rail transport services are not just about moving products from one point to another. We offer a comprehensive solution that includes product tracking, and warehousing. We also have a dedicated customer service team that is always ready to answer your questions and address your concerns. With Ecomaritime Logistics, you can be sure that your product is in safe hands.
+										</p>
+										<p><a href="/railway" class="custom-btn">read more</a></p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-md-12 portfolio-wrap">
+				<div class="row no-gutters align-items-center">
+					<div class="col-md-5 order-md-last img js-fullheight"
+						style="background-image: url(/static/images/simone-hutsch-XTyNwgCYWTk-unsplash\(1\).jpg);">
+
+					</div>
+					<div class="col-md-7">
+						<div class="text pt-5 pr-md-5 ftco-animate">
+							<div class="px-4 px-lg-4">
+								<div class="desc text-md-right">
+									<div class="top">
+										<h2 class="mb-4"><a href="/storage">Tank Storages</a></h2>
+									</div>
+									<div class="absolute">
+										<p>At Ecomaritime Logistics, we offer tank storage solutions that are designed to meet the unique needs of our clients. Our tank storages are built with high-quality materials to ensure durability and longevity. They are perfect for storing a variety of products and more.</p>
+										<p>
+											With our tank storages, you can rest assured that your products are stored in a safe and secure environment. Our dedicated team of professionals is always on hand to provide you with the support and assistance you need to manage your storage effectively.
+										</p>
+										<p><a href="/storage" class="custom-btn">read more</a></p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-md-12 portfolio-wrap">
+				<div class="row no-gutters align-items-center">
+					<div class="col-md-5 img js-fullheight"
+						style="background-image: url(/static/images/joshua-sun-mkZ_AtAFUb8-unsplash.jpg);">
+
+					</div>
+					<div class="col-md-7">
+						<div class="text pt-5 pl-md-5 pl-md-4 ftco-animate">
+							<div class="px-4 px-lg-4">
+								<div class="desc">
+									<div class="top">
+										<h2 class="mb-4"><a href="/pipeline">Pipeline Transport</a></h2>
+									</div>
+									<div class="absolute">
+										<p>At Ecomaritime Logistics, we offer pipeline transport solutions that are designed to meet the unique needs of our clients. Our pipeline transport services are reliable, efficient and safe. We understand that pipeline transport is a critical component of the global supply chain, especially for the oil and gas industry.</p>
+										<p>
+											We have a dedicated customer service team that is always ready to answer your questions and address your concerns. With Ecomaritime Logistics, you can be sure that your product is in safe hands.
+										</p>
+										<p><a href="/pipeline" class="custom-btn">read more</a></p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+
+		</div>
+	</div>
+</section>
+
+{% endblock content %}
