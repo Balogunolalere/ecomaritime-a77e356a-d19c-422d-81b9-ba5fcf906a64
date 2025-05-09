@@ -1,0 +1,219 @@
+{% extends 'base.html' %}
+
+{% block title %} Ecomaritime | Vessel Shipping Services {% endblock title %}
+
+{% block content %}
+<style>
+    .ftco-section.ftco-portfolio .services-2 .media-body h3,
+    .ftco-section.ftco-portfolio .services-2 .media-body p {
+        color: #212529 !important; /* Standard dark color for text visibility */
+    }
+    
+    /* Icon and text spacing improvements */
+    .services-2 .icon {
+        margin-bottom: 1.5rem;
+        height: 90px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .services-2 .icon i {
+        font-size: 2.5rem;
+        transition: transform 0.3s ease;
+    }
+    
+    .services-2:hover .icon i {
+        transform: scale(1.1);
+    }
+    
+    .services-2 .media-body h3 {
+        font-size: 1.4rem;
+        margin-bottom: 1rem;
+    }
+    
+    .services-2 .media-body p {
+        font-size: 1rem;
+        line-height: 1.6;
+        margin-bottom: 1.5rem;
+    }
+    
+    .process-step i {
+        margin-bottom: 1.25rem;
+        font-size: 2.25rem;
+    }
+    
+    .process-step h4 {
+        margin-bottom: 1rem;
+        font-size: 1.25rem;
+    }
+</style>
+
+<section class="hero-wrap hero-wrap-2" style="background-image: url('static/images/shaah-shahidh--subrrYxv8A-unsplash.jpg');"
+    data-stellar-background-ratio="0.5">
+    <div class="overlay"></div>
+    <div class="container">
+        <div class="row no-gutters slider-text align-items-end">
+            <div class="col-md-9 ftco-animate pb-5">
+                <p class="breadcrumbs">
+                    <span class="mr-2"><a href="/" class="make-white">Home <i class="fa fa-chevron-right"></i></a></span>
+                    <span class="make-white">Vessel Shipping <i class="fa fa-chevron-right"></i></span>
+                </p>
+                <h1 class="mb-3 bread make-white">Comprehensive Vessel Shipping Solutions</h1>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="ftco-section ftco-portfolio">
+    <div class="container">
+        <div class="row justify-content-center mb-5 pb-3">
+            <div class="col-md-8 heading-section text-center ftco-animate">
+                <span class="subheading">Our Core Maritime Service</span>
+                <h2 class="mb-4">Port-to-Port Vessel Shipping Excellence</h2>
+                <p class="lead">Ecomaritime Logistics is your trusted partner for reliable and efficient port-to-port vessel shipping. We specialize in transporting a diverse range of cargo, ensuring secure and timely delivery across vital global sea routes. Our commitment is to provide seamless and cost-effective shipping solutions tailored to your unique requirements.</p>
+            </div>
+        </div>
+
+        <div class="row d-flex mb-5">
+            <div class="col-md-6 d-flex align-items-stretch ftco-animate">
+                <div class="img-wrap flex-grow-1">
+                    <img src="{{ url_for('static', path='images/precious-madubuike-JC9S_wr08Lk-unsplash.jpg') }}" alt="Vessel Shipping Operations" class="img-fluid h-100 w-100" style="object-fit: cover;">
+                </div>
+            </div>
+            <div class="col-md-6 pl-md-5 ftco-animate d-flex align-items-center">
+                <div>
+                    <h3 class="mb-3">Why Entrust Your Cargo to Our Vessel Shipping?</h3>
+                    <p>With years of experience in the maritime logistics industry, Ecomaritime Logistics has built a reputation for excellence. We understand the complexities of global shipping and are dedicated to navigating them for you. Our team of seasoned professionals meticulously manages every aspect of the shipping process, from initial consultation and booking to final cargo delivery and documentation.</p>
+                    <p>We leverage an extensive global network, strong relationships with port authorities, and a modern, well-maintained fleet of vessels. This allows us to offer competitive rates, flexible scheduling, and customized solutions for various cargo types, including bulk commodities, project cargo, containerized goods, and specialized or oversized items.</p>
+                    <p>Our unwavering focus on safety, efficiency, and transparent communication ensures that your cargo is in capable hands, providing you with peace of mind throughout its journey from port to port.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="row ftco-section pt-0">
+            <div class="col-md-12 heading-section text-center ftco-animate mb-5">
+                <span class="subheading">Key Features & Benefits</span>
+                <h2>Advantages of Shipping with Ecomaritime</h2>
+            </div>
+            <div class="col-md-4 ftco-animate">
+                <div class="media block-6 services services-2 d-block text-center">
+                    <div class="icon"><i class="fas fa-ship text-primary"></i></div>
+                    <div class="media-body">
+                        <h3 class="heading">Versatile Cargo Handling</h3>
+                        <p>Expertise in handling bulk, breakbulk, containerized, and project cargo with specialized equipment and utmost care.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 ftco-animate">
+                <div class="media block-6 services services-2 d-block text-center">
+                    <div class="icon"><i class="fas fa-globe-americas text-primary"></i></div>
+                    <div class="media-body">
+                        <h3 class="heading">Global Network & Reach</h3>
+                        <p>Extensive coverage of major global ports and trade lanes, ensuring your cargo reaches its destination efficiently.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 ftco-animate">
+                <div class="media block-6 services services-2 d-block text-center">
+                    <div class="icon"><i class="fas fa-headset text-primary"></i></div>
+                    <div class="media-body">
+                        <h3 class="heading">Dedicated Customer Support</h3>
+                        <p>A committed team providing real-time tracking, proactive communication, and support throughout the shipping lifecycle.</p>
+                    </div>
+                </div>
+            </div>
+             <div class="col-md-4 ftco-animate">
+                <div class="media block-6 services services-2 d-block text-center">
+                    <div class="icon"><i class="fas fa-cogs text-primary"></i></div>
+                    <div class="media-body">
+                        <h3 class="heading">Customized Solutions</h3>
+                        <p>Tailored shipping strategies to meet specific industry needs, cargo types, and delivery timelines, optimizing for cost and efficiency.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 ftco-animate">
+                <div class="media block-6 services services-2 d-block text-center">
+                    <div class="icon"><i class="fas fa-shield-alt text-primary"></i></div>
+                    <div class="media-body">
+                        <h3 class="heading">Safety & Compliance</h3>
+                        <p>Adherence to the highest international safety and environmental regulations, ensuring secure and responsible transport.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 ftco-animate">
+                <div class="media block-6 services services-2 d-block text-center">
+                    <div class="icon"><i class="fas fa-file-invoice-dollar text-primary"></i></div>
+                    <div class="media-body">
+                        <h3 class="heading">Transparent Pricing</h3>
+                        <p>Competitive rates and clear, upfront cost structures with no hidden fees, providing excellent value for your investment.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row justify-content-center mt-5 pt-3">
+            <div class="col-md-10 heading-section text-center ftco-animate">
+                <span class="subheading">Our Streamlined Process</span>
+                <h2>Navigating Your Shipment: From Origin to Destination</h2>
+                <p>We've refined our vessel shipping process to be as straightforward and efficient as possible, minimizing hassle for our clients and ensuring smooth transitions at every critical stage of the journey.</p>
+            </div>
+        </div>
+        <div class="row mt-4">
+             <div class="col-md-4 ftco-animate mb-4">
+                <div class="process-step text-center p-4 border rounded h-100">
+                    <i class="fas fa-clipboard-list text-primary"></i>
+                    <h4>1. Consultation & Quotation</h4>
+                    <p>We begin by thoroughly understanding your specific shipping requirements, cargo details, origin, and destination. Based on this, we provide a comprehensive and competitive quotation.</p>
+                </div>
+            </div>
+            <div class="col-md-4 ftco-animate mb-4">
+                <div class="process-step text-center p-4 border rounded h-100">
+                    <i class="fas fa-file-signature text-primary"></i>
+                    <h4>2. Booking & Documentation</h4>
+                    <p>Once you approve the quotation, our team efficiently handles the vessel booking process and meticulously assists with all necessary shipping documentation, ensuring full compliance with international regulations.</p>
+                </div>
+            </div>
+            <div class="col-md-4 ftco-animate mb-4">
+                <div class="process-step text-center p-4 border rounded h-100">
+                    <i class="fas fa-truck-loading text-primary"></i>
+                    <h4>3. Cargo Collection & Port Handling</h4>
+                    <p>We can coordinate cargo collection from your premises or you can deliver to the designated port. We expertly manage all port-side handling, including warehousing (if needed) and loading procedures.</p>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-md-4">
+            <div class="col-md-4 ftco-animate mb-4">
+                <div class="process-step text-center p-4 border rounded h-100">
+                    <i class="fas fa-water text-primary"></i>
+                    <h4>4. Sea Freight & In-Transit Monitoring</h4>
+                    <p>Your cargo is securely shipped on our reliable network of vessels. Throughout the sea transit, we provide access to real-time tracking and proactive updates on its voyage progress.</p>
+                </div>
+            </div>
+            <div class="col-md-4 ftco-animate mb-4">
+                <div class="process-step text-center p-4 border rounded h-100">
+                    <i class="fas fa-dolly text-primary"></i>
+                    <h4>5. Arrival & Customs Clearance</h4>
+                    <p>Upon arrival at the destination port, we oversee the unloading process and can provide comprehensive assistance with customs clearance procedures to ensure a swift and compliant release of your cargo.</p>
+                </div>
+            </div>
+            <div class="col-md-4 ftco-animate mb-4">
+                <div class="process-step text-center p-4 border rounded h-100">
+                    <i class="fas fa-check-circle text-primary"></i>
+                    <h4>6. Final Delivery & Confirmation</h4>
+                    <p>We can arrange for the final inland delivery to your specified location (if required) and provide official confirmation once the shipment is successfully completed to your full satisfaction.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="row justify-content-center mt-5 pt-5">
+            <div class="col-md-8 text-center ftco-animate">
+                <h2 class="mb-3">Ready to Set Sail with Your Cargo?</h2>
+                <p class="mb-4 lead">Contact Ecomaritime Logistics today for a personalized consultation and a no-obligation quote for your port-to-port vessel shipping needs. Let our dedicated experts handle the complexities of global maritime logistics, so you can focus on your core business.</p>
+                <p><a href="/contact" class="btn btn-primary btn-lg py-3 px-4">Request a Shipping Quote</a></p>
+            </div>
+        </div>
+    </div>
+</section>
+
+{% endblock %}

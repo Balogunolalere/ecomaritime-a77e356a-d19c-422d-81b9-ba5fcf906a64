@@ -56,6 +56,7 @@ def send_email(config: EmailConfig, subject: str, content: str):
 @app.get("/railway")
 @app.get("/pipeline")
 @app.get("/terminal")
+@app.get("/shipping") # Add shipping route
 async def render_page(request: Request):
     template = request.url.path.strip("/") or "index"
     return templates.TemplateResponse(f"{template}.html", {"request": request})

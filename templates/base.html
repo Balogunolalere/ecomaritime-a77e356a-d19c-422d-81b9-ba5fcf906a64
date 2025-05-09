@@ -12,7 +12,7 @@
   <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:200,300,400,600,700,800,900&display=swap"
     rel="stylesheet">
 
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> -->
 
   <link rel="stylesheet" href="/static/css/animate.css">
 
@@ -63,10 +63,19 @@
         <ul class="navbar-nav ml-auto">
           <li class="nav-item active"><a href="/" class="nav-link">Home</a></li>
           <li class="nav-item"><a href="/about" class="nav-link">About</a></li>
-          <li class="nav-item"><a href="/storage" class="nav-link">Storage</a></li>
-          <li class="nav-item"><a href="/railway" class="nav-link">Railway</a></li>
-          <li class="nav-item"><a href="/pipeline" class="nav-link">Pipeline</a></li>
-          <li class="nav-item"><a href="/terminal" class="nav-link">Terminal</a></li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownServices" role="button" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              Services
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownServices">
+              <a class="dropdown-item" href="/storage">Storage</a>
+              <a class="dropdown-item" href="/railway">Railway</a>
+              <a class="dropdown-item" href="/pipeline">Pipeline</a>
+              <a class="dropdown-item" href="/shipping">Shipping</a>
+              <a class="dropdown-item" href="/terminal">Terminal</a>
+            </div>
+          </li>
           <li class="nav-item"><a href="/contact" class="nav-link">Contact</a></li>
         </ul>
       </div>
@@ -81,8 +90,9 @@
   <footer style="background-color: #062C3B; color: #ffffff; padding: 40px 0; font-family: Arial, sans-serif;">
     <div style="max-width: 1200px; margin: 0 auto; padding: 0 20px;">
         <div style="display: flex; justify-content: space-between; flex-wrap: wrap;">
+            <!-- Contact Information -->
             <div style="flex: 1; min-width: 250px; margin-bottom: 20px;">
-                <h2 style="font-size: 24px; margin-bottom: 20px;" class="navbar-green">Have a Questions?</h2>
+                <h2 style="font-size: 24px; margin-bottom: 20px;" class="navbar-green">Contact Information</h2>
                 <ul style="list-style: none; padding: 0;">
                     <li style="margin-bottom: 15px;">
                         <i class="fas fa-map-marker-alt" style="margin-right: 10px; color: #4a4a4a;"></i>
@@ -102,7 +112,63 @@
                     </li>
                 </ul>
             </div>
+
+            <!-- Quick Links -->
+            <div style="flex: 1; min-width: 250px; margin-bottom: 20px;">
+                <h2 style="font-size: 24px; margin-bottom: 20px;" class="navbar-green">Quick Links</h2>
+                <ul style="list-style: none; padding: 0;">
+                    <li style="margin-bottom: 10px;">
+                        <a href="/about" style="color: #ffffff; text-decoration: none;">About Us</a>
+                    </li>
+                    <li style="margin-bottom: 10px;">
+                        <a href="/contact" style="color: #ffffff; text-decoration: none;">Contact</a>
+                    </li>
+                    <li style="margin-bottom: 10px;">
+                        <a href="/terminal" style="color: #ffffff; text-decoration: none;">Terminals</a>
+                    </li>
+                    <li style="margin-bottom: 10px;">
+                        <a href="/storage" style="color: #ffffff; text-decoration: none;">Storage Solutions</a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Our Services -->
+            <div style="flex: 1; min-width: 250px; margin-bottom: 20px;">
+                <h2 style="font-size: 24px; margin-bottom: 20px;" class="navbar-green">Our Services</h2>
+                <ul style="list-style: none; padding: 0;">
+                    <li style="margin-bottom: 10px;">Tank Storage</li>
+                    <li style="margin-bottom: 10px;">Rail Transport</li>
+                    <li style="margin-bottom: 10px;">Pipeline Transport</li>
+                    <li style="margin-bottom: 10px;">Terminal Operations</li>
+                    <li style="margin-bottom: 10px;">Shipping Services</li>
+                </ul>
+            </div>
+
+            <!-- Business Hours -->
+            <div style="flex: 1; min-width: 250px; margin-bottom: 20px;">
+                <h2 style="font-size: 24px; margin-bottom: 20px;" class="navbar-green">Business Hours</h2>
+                <ul style="list-style: none; padding: 0;">
+                    <li style="margin-bottom: 10px;">
+                        <span style="display: inline-block; width: 120px;">Monday-Friday:</span>
+                        <span>8:00 AM - 6:00 PM</span>
+                    </li>
+                    <li style="margin-bottom: 10px;">
+                        <span style="display: inline-block; width: 120px;">Saturday:</span>
+                        <span>9:00 AM - 2:00 PM</span>
+                    </li>
+                    <li style="margin-bottom: 10px;">
+                        <span style="display: inline-block; width: 120px;">Sunday:</span>
+                        <span>Closed</span>
+                    </li>
+                    <li style="margin-top: 15px; color: #91B875;">
+                        <i class="fas fa-clock" style="margin-right: 10px;"></i>
+                        24/7 Emergency Support Available
+                    </li>
+                </ul>
+            </div>
         </div>
+
+        <!-- Copyright Section -->
         <div style="text-align: center; margin-top: 40px; padding-top: 20px; border-top: 1px solid #333;">
             <p style="margin: 0; font-size: 14px;">
                 Copyright © <span id="year"></span> All rights reserved | Ecomaritime
