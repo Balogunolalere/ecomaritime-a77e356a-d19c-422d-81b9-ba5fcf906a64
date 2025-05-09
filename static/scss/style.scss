@@ -316,8 +316,6 @@ h1, h2, h3, h4, h5,
 	z-index: 0;
 	@include media-breakpoint-down(md){
 		background-position: top center !important;
-    height: auto; // Adjust height for smaller screens
-    padding: 4em 0; // Add padding for smaller screens
 	}
 	.overlay{
 		position: absolute;
@@ -351,18 +349,12 @@ h1, h2, h3, h4, h5,
 }
 .slider-text{
 	height: 850px;
-  @include media-breakpoint-down(md){
-    height: auto; // Adjust height for smaller screens
-  }
 	h1 {
 		font-size: 60px;
 		color: $black;
 		line-height: 1.1;
 		font-weight: 400;
 		position: relative;
-    @include media-breakpoint-down(md){
-      font-size: 40px; // Reduce font size for smaller screens
-    }
 		&:after{
 			position: absolute;
 			top: -5px;
@@ -723,7 +715,6 @@ h1, h2, h3, h4, h5,
 		@include media-breakpoint-down(sm){
 			width: 100%;
 			opacity: .4;
-      position: relative; // Ensure overlay doesn't break layout
 		}
 	}
 }
@@ -971,9 +962,6 @@ textarea.form-control {
 	font-size: 16px;
 	padding: 7em 0;
 	background: darken($darken,10%);
-  @include media-breakpoint-down(md){
-    padding: 4em 0; // Adjust padding for smaller screens
-  }
 	.ftco-footer-logo {
 		text-transform: uppercase;
 		letter-spacing: .1em;
