@@ -51,6 +51,8 @@ body {
   line-height: $line-height-base;
   color: $body-color;
   text-align: left; // 3
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
   background-color: $body-bg; // 2
 }
 
